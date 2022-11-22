@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# comments controlleere
+# comments controllere
 class CommentsController < ApplicationController
   before_action :set_comment, only: %i[show edit update destroy]
 
