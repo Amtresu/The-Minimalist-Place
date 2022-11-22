@@ -20,8 +20,6 @@ jobs:
           [ -f .rubocop.yml ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/ror/.rubocop.yml
       - name: Rubocop Report
         run: rubocop --color
-        Style/FrozenStringLiteralComment:
-  Enabled: false
   stylelint:
     name: Stylelint
     runs-on: ubuntu-18.04
