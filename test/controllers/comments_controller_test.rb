@@ -1,45 +1,52 @@
-require "test_helper"
+# frozen_string_literal: true
+# rubocop:disable all
+
+require 'test_helper'
 
 class CommentsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @comment = comments(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get comments_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_comment_url
     assert_response :success
   end
 
-  test "should create comment" do
-    assert_difference("Comment.count") do
-      post comments_url, params: { comment: { CreatedAt: @comment.CreatedAt, UpdateAt: @comment.UpdateAt, authordId: @comment.authordId, postid: @comment.postid, text: @comment.text } }
+  test 'should create comment' do
+    assert_difference('Comment.count') do
+      post comments_url,
+           params: { comment: { CreatedAt: @comment.CreatedAt, UpdateAt: @comment.UpdateAt, authordId: @comment.authordId,
+                                postid: @comment.postid, text: @comment.text } }
     end
 
     assert_redirected_to comment_url(Comment.last)
   end
 
-  test "should show comment" do
+  test 'should show comment' do
     get comment_url(@comment)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_comment_url(@comment)
     assert_response :success
   end
 
-  test "should update comment" do
-    patch comment_url(@comment), params: { comment: { CreatedAt: @comment.CreatedAt, UpdateAt: @comment.UpdateAt, authordId: @comment.authordId, postid: @comment.postid, text: @comment.text } }
+  test 'should update comment' do
+    patch comment_url(@comment),
+          params: { comment: { CreatedAt: @comment.CreatedAt, UpdateAt: @comment.UpdateAt, authordId: @comment.authordId,
+                               postid: @comment.postid, text: @comment.text } }
     assert_redirected_to comment_url(@comment)
   end
 
-  test "should destroy comment" do
-    assert_difference("Comment.count", -1) do
+  test 'should destroy comment' do
+    assert_difference('Comment.count', -1) do
       delete comment_url(@comment)
     end
 
