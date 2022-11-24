@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Post < ApplicationRecord
-  belongs_to :author
+  belongs_to :author, class_name: 'User'
   has_many :comments
   has_many :likes
 
@@ -10,6 +10,6 @@ class Post < ApplicationRecord
   end
 
   def update_posts_counter
-    author.increment!(:Posts_Counter)
+    author.increment!(:PostsCounter)
   end
 end
