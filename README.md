@@ -1,24 +1,84 @@
-# README
+# The Minimalist Place
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- HTML
+- CSS
+- JavaScript
+- Ruby
+- PostgreSQL
 
-* System dependencies
 
-* Configuration
+## `Getting Started`
 
-* Database creation
+To get a local copy of this project:
 
-* Database initialization
+Clone this repository or download the Zip folder:
+```
+git clone https://github.com/Amtrest/The-minimalist-place.git
+```
 
-* How to run the test suite
+Enter in root directory:
+```
+cd TheMinimalistPlace
+```
+Then run:
+```
+- bundle install
+- npm install
+```
+Create Database (Mandatory)
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+rails db:create
+rails db:schema:load
+```
 
-* Deployment instructions
+If you have made a migration the run this command
 
-* ...
+```
+rails db:migrate
+```
+
+run ShareMe app on server:
+```
+rails s
+```
+
+Open Source code of ShareMe app on VS-Code
+
+```
+code .
+```
+Run tests
+
+```
+rspec
+```
+
+## Authors
+
+👤 **Conor Follette**
+
+- GitHub: [@Conor](https://github.com/Amtresu)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/ShahierNashaat/ruby-capstone/issues/new).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
