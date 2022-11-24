@@ -7,8 +7,6 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :name
       t.text :photo
       t.text :bio
-      t.timestamp :UpdatedAt
-      t.timestamp :CreaetedAt
       t.integer :PostsCounter
 
       t.timestamps
