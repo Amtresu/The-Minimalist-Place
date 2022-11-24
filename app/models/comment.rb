@@ -2,9 +2,9 @@
 
 class Comment < ApplicationRecord
   belongs_to :post
-  belongs_to :user
+  belongs_to :author
 
   def increment_comments
-    user.increment!(:PostsCounter)
+    post.increment!(:PostsCounter)
   end
 end
