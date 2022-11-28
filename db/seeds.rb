@@ -21,13 +21,13 @@ end
     Post.create do |post|
         post.title = FFaker::Movie.title
         post.text  = 'Lorem Ipsum....'
-        post.user = User.all.sample
+        post.author = User.all.sample
     end
 end
 
 100.times do 
     Like.create do |like|
-        like.user = User.all.sample
+        like.author = User.all.sample
         like.post = Post.all.sample
     end
 end
@@ -35,7 +35,7 @@ end
 50.times do 
     Comment.create do |comment|
         comment.text = 'Comment'
-        comment.user = User.all.sample
+        comment.author = User.all.sample
         comment.post = Post.all.sample
     end
 end
