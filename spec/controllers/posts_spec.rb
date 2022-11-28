@@ -7,7 +7,7 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to have_http_status :ok
     end
 
-    it "Should show the index template" do
+    it 'Should show the index template' do
       expect(response).to render_template :index
     end
 
@@ -22,7 +22,7 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to have_http_status :ok
     end
 
-    it "Should show the index template" do
+    it 'Should show the index template' do
       expect(response).to render_template :show
     end
 

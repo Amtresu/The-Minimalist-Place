@@ -7,7 +7,7 @@ RSpec.describe 'Users', type: :request do
       expect(response).to have_http_status(200)
     end
 
-    it "Should show the index template" do
+    it 'Should show the index template' do
       expect(response).to render_template(:index)
     end
 
@@ -22,7 +22,7 @@ RSpec.describe 'Users', type: :request do
       expect(response).to have_http_status 200
     end
 
-    it "Should show the index template" do
+    it 'Should show the index template' do
       expect(response).to render_template :show
     end
 
