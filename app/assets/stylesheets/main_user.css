@@ -1,101 +1,91 @@
-.user_div { 
-    margin-left: 25px;
-    background: white;
-    font-size: 2rem;
-    text-align: center;
+.user_div {
+  margin-left: 25px;
+  background: white;
+  font-size: 2rem;
+  text-align: center;
 }
 
-li { 
-    list-style: none;
+li {
+  list-style: none;
 }
 
- .user_card { 
-    display: flex;
-    margin: 10px;
- }
-
- .user_photo {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    margin-right: 25px;
- }
-
- .user_list { 
-    border: 2px solid black;
-    width: 50%;
- }
-
- .user_list > li {
-    display: flex;
-    margin: 10px;
-  }
-
-  .user_name  {
-    font-size: 1.5rem;
-  }
-
-.user_detail_div {  
-   text-align: center;
-   margin-left: 25%;
-   margin-right: 25%;
-
+.user_card {
+  display: flex;
+  margin: 10px;
 }
 
-.user_detail_div >div { 
-    border: 2px black;
-    border-style: solid;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height:75px;
+.user_photo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin-right: 25px;
+}
 
+.user_list {
+  border: 2px solid black;
+  width: 50%;
+}
+
+.user_list > li {
+  display: flex;
+  margin: 10px;
+}
+
+.user_name {
+  font-size: 1.5rem;
+}
+
+.user_detail_div {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.user_detail_div > div {
+  border: 2px black;
+  border-style: solid;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 75px;
 }
 
 .user_detail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user_detail > div {
-    border: 2px black;
-    border-style: solid;
-    height:25px;
-    margin-right: 50px
-
+  border: 2px black;
+  border-style: solid;
+  height: 25px;
+  margin-right: 50px;
 }
 
 .user_detail_posts {
-    text-align: center;
-   margin-left: 25%;
-   margin-right: 25%;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-.user_detail_posts >div { 
-    border: 2px black;
-    border-style: solid;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height:75px;
-
-}
-
-.user_detail_posts {
-    text-align: center;
-   margin-left: 25%;
-   margin-right: 25%;
+.user_detail_posts > div {
+  border: 2px black;
+  border-style: solid;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 75px;
 }
 
 .post_detail {
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .post_detail > div {
-    border: 2px black;
-    border-style: solid;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height:150px;
+  border: 2px black;
+  border-style: solid;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 150px;
 }
