@@ -1,5 +1,4 @@
 .user_div {
-  margin-left: 25px;
   background: white;
   font-size: 2rem;
   text-align: center;
@@ -82,7 +81,6 @@ li {
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
-  
 }
 
 .post_detail > p {
