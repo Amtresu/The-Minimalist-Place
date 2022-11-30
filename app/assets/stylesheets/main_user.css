@@ -3,6 +3,7 @@
   background: white;
   font-size: 2rem;
   text-align: center;
+  margin-left: 25%;
 }
 
 li {
@@ -29,6 +30,7 @@ li {
 .user_list > li {
   display: flex;
   margin: 10px;
+  flex-direction: column;
 }
 
 .user_name {
@@ -80,9 +82,10 @@ li {
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
+  
 }
 
-.post_detail > div {
+.post_detail > p {
   border: 2px black;
   border-style: solid;
   margin-top: 5%;

@@ -1,11 +1,8 @@
 <div class="post_detail">
-    <div>Lorem Ipsum</div>
-    <div>
-        <p>Username: Comment</p>
-        <p>Username: Comment</p>
-        <p>Username: Comment</p>
-        <p>Username: Comment</p>
-        <p>Username: Comment</p>
-        <p>Username: Comment</p>
-    </div>
+<p><%= @post.title  %></p>
+<p><%= @user.name %></p>
+
+<% @comments.each do |comment| %>
+<p><%= comment.text %></p>
+<% end %>
 </div>

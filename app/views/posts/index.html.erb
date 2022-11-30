@@ -1,8 +1,8 @@
 <div class="user_detail_posts">
-    <div>Name</div>
-    <div><p>Post 1</p> Lorem Ipsum...</div>
-    <div><p>Post 1</p> Lorem Ipsum...</div>
-    <div><p>Post 1</p> Lorem Ipsum...</div>
-    <div><p>Post 1</p> Lorem Ipsum...</div>
-    <button>Pagination</button>
+<% @posts.each do |post| %>
+<p><%= post.title %></p>
+<p><%= post.text %></p>
+<p><%= @user.name %></p>
+
+<% end %>
 </div>
