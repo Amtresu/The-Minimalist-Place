@@ -5,4 +5,13 @@
 <% @comments.each do |comment| %>
 <p><%= comment.text %></p>
 <% end %>
+
+<%= form_with model: @comments, url: user_post_comments_path(post_id: @post.id) do |form| %>
+<div><%= form.text_area :text, placeholder: "Share your thoughts here." %></div>
+<div><%= form.submit 'Add Comment' %></div>
+<% end %>
+
+<%= form_with model: @likes, url: user_post_likes_path(post_id: @post.id) do |form| %>
+<div><%= form.submit 'Like this Post' %></div>
+<% end %>
 </div>

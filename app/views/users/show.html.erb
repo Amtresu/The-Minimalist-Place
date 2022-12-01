@@ -3,7 +3,6 @@
     <div class="user_detail_name"> <%= @user.name %></div>
     <div class="user_detail_bio"><%= @user.bio %></div>
      <% @user.return_posts.each do |post| %>
-      <%= link_to user_post_url(user_id:@user.id, id: post.id), class:'nav-link' do%>
         <div>
           <div ><%= post.title %></div>
           <div>
@@ -11,8 +10,8 @@
             <p ><%= post.text.slice(0,70)%> ...</p>
           </div>
         </div>
-      <% end %>
-    <button>See all Posts</button>
-    <% end %>
+      <% end %> 
     
 </div>
+ <button><%= link_to user_posts_url(user_id:@user.id), class:'nav-link' do%>See All Posts</button>
+ <% end %>
