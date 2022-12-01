@@ -91,7 +91,7 @@ li {
   height: 150px;
 }
 
-.form_div { 
+.form_div {
   display: flex;
   flex-direction: column;
 }
