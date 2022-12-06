@@ -115,6 +115,12 @@ rspec
 
 - GitHub: [@Amtresu](https://github.com/amtresu)
 
+👤 **Michael Mesfin**
+
+- GitHub: [@michael-duke](https://github.com/michael-duke)
+- Twitter: [@MikeDuke21](https://twitter.com/MikeDuke21)
+- LinkedIn: [MICHAEL MESFIN](https://linkedin.com/in/https://www.linkedin.com/in/michael-21-duke/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

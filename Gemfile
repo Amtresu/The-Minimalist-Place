@@ -35,6 +35,10 @@ gem 'ffi'
 
 gem 'rails-controller-testing'
 
+gem 'bullet', group: 'development'
+
+gem 'database_cleaner'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

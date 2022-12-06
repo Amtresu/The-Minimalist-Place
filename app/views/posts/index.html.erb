@@ -1,6 +1,7 @@
 <div class="user_detail_posts">
 <% @posts.each do |post| %>
-<%=  link_to "See Post Details", user_post_url(id: post.id) %>
+<button><%= link_to user_post_url(id: post.id, user_id:@user.id), class:'nav-link' do%>See Post Details</button>
+<% end %>
 <p><%= post.title %></p>
 <p><%= post.text %></p>
 <p><%= @user.name %></p>
