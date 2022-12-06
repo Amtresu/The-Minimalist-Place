@@ -4,7 +4,7 @@
 <% @users.each do |user| %>
   <%= link_to user_path(id: user.id) do%>
     <div class="user_card">
-        <div class="user_photo" src="<%= user.photo %>"></div>
+        <div class="user_photo"><img src="<%= user.photo %>"></div>
         <ul class="user_list">
             <li class="user_name"></li>
             <p><%= user.name %></p>
