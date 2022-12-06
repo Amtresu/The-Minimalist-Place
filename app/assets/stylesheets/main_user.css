@@ -90,3 +90,8 @@ li {
   margin-bottom: 5%;
   height: 150px;
 }
+
+.form_div {
+  display: flex;
+  flex-direction: column;
+}

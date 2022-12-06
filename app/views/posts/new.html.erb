@@ -1,0 +1,7 @@
+<div class="form_div">
+<%= form_with model: @post, url: user_posts_path do|form| %>
+   <div><%= form.text_field :title, placeholder: "Post Title" %></div>
+  <div>  <%= form.text_area :text, placeholder: "Post content" %></div>
+    <div><%= form.submit "Add Post" %></div>
+    <% end %>
+</div>

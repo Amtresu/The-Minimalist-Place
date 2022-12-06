@@ -1,8 +1,9 @@
 <div class="user_detail_posts">
 <% @posts.each do |post| %>
+<%=  link_to "See Post Details", user_post_url(id: post.id) %>
 <p><%= post.title %></p>
 <p><%= post.text %></p>
 <p><%= @user.name %></p>
-
 <% end %>
+<button><%=  link_to "Add New post", new_user_post_path(user_id: @user.id) %> </button>
 </div>
