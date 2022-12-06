@@ -5,7 +5,7 @@ RSpec.describe 'Post Index', type: :feature do
     @img = 'Img'
     @author = User.create(name: 'Oscar Funk', PostsCounter: 2, photo: @img, bio: 'Drow Ranger')
     @post1 = Post.create(author: @author, title: '1', text: 'Post 1', CommentsCounter: 1, LikesCounter: 1)
-    @post2 = Post.create(author:@author, title: '2', text: 'Post 2', CommentsCounter: 1, LikesCounter: 1)
+    @post2 = Post.create(author: @author, title: '2', text: 'Post 2', CommentsCounter: 1, LikesCounter: 1)
 
     visit user_path(@author.id)
   end
@@ -23,7 +23,7 @@ RSpec.describe 'Post Index', type: :feature do
   end
 
   it 'Should show the post body' do
-      expect(page).to have_content(@post2.text)
+    expect(page).to have_content(@post2.text)
   end
 
   it 'Redirects to show page when clicked' do
