@@ -4,9 +4,6 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :update_allowed_parameters, if: :devise_controller?
 
-  def current_user1
-    Current.user = User.first
-  end
 
   def after_sign_in_path_for(_resource)
     users_url
