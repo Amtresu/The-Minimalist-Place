@@ -10,30 +10,35 @@ require 'ffaker'
 #   Character.create(name: "Luke", movie: movies.first)
 
 50.times do
-    User.create do |user|
+    User.create! do |user|
         user.name = FFaker::Name.name
         user.photo = 'image link'
         user.bio = 'Lorem Ipsum....'
+        user.email = FFaker::Internet.email
+        user.password = 'password'
+        user.PostsCounter = 1
     end
 end
 
 100.times do 
-    Post.create do |post|
+    Post.create! do |post|
         post.title = FFaker::Movie.title
         post.text  = 'Lorem Ipsum....'
         post.author = User.all.sample
+        post.CommentsCounter = 1
+        post.LikesCounter = 1
     end
 end
 
 100.times do 
-    Like.create do |like|
+    Like.create! do |like|
         like.author = User.all.sample
         like.post = Post.all.sample
     end
 end
 
 50.times do 
-    Comment.create do |comment|
+    Comment.create! do |comment|
         comment.text = 'Comment'
         comment.author = User.all.sample
         comment.post = Post.all.sample
