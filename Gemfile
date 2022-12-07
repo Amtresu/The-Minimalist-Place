@@ -35,13 +35,11 @@ gem 'ffi'
 
 gem 'rails-controller-testing'
 
-
 gem 'devise'
 
 gem 'bullet', group: 'development'
 
 gem 'database_cleaner'
-
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
